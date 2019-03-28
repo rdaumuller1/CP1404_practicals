@@ -1,15 +1,12 @@
+MIN_LENGTH = 3
+
 
 def main():
-
-
-    MIN_LENGTH = 3
-
     password = get_password()
 
-    while MIN_LENGTH >= 0:
-        if len(password) >= MIN_LENGTH:
-            print(len(password) * '*')
+    while len(password) < MIN_LENGTH:
         password = get_password()
+    print(len(password) * '*')
 
 
 def get_password():
