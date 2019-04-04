@@ -1,5 +1,7 @@
 import random
 
+MAXIMUM = 45
+
 NUMBERS_ON_LINE = 6
 
 
@@ -12,9 +14,9 @@ def main():
     for i in range(number_quick_picks):
         quick_pick = []
         for j in range(NUMBERS_ON_LINE):
-            number = random.randint(1, 45)
+            number = random.randint(1, MAXIMUM)
             while number in quick_pick:
-                number = random.randint(1, 45)
+                number = random.randint(1, MAXIMUM)
             quick_pick.append(number)
         quick_pick.sort()
         print(" ".join("{:2}".format(number) for number in quick_pick))
