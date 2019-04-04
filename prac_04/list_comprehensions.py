@@ -27,9 +27,9 @@ print(full_initials)
 a_names = [name for name in names if name.startswith('A')]
 print(a_names)
 
-
 lowercase_full_names = [name.lower() for name in full_names]
 print(lowercase_full_names)
+
 
 almost_numbers = ['0', '10', '21', '3', '-7', '88', '9']
 numbers = [int(almost_numbers) for almost_numbers in almost_numbers]
