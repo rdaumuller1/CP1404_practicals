@@ -8,5 +8,4 @@ while colour != "":
         print(colour, "is", HEX_COLOURS[colour])
     else:
         print("Invalid colour name")
-    state = input("Enter colour name: ")
-exit()
+    colour = input("Enter colour name: ")
