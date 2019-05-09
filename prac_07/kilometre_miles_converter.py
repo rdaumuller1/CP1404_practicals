@@ -2,7 +2,7 @@
 from kivy.app import App
 from kivy.lang import Builder
 
-MILES_TO_KILOMETRES = 1.60934
+MILES_TO_KILOMETRES = 1.609
 
 
 class KilometreMilesConverter(App):
@@ -19,6 +19,7 @@ class KilometreMilesConverter(App):
     def handle_increment(self, change):
         value = self.get_validated_miles() + change
         self.root.ids.input_miles.text = str(value)
+        self.handle_calculate()
 
     def get_validated_miles(self):
         try:
