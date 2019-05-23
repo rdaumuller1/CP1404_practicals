@@ -19,8 +19,7 @@ class Car:
 
     def __str__(self):
         """Return a string of a Car object."""
-        return "{}, Fuel = {}, Odometer = {}".format(self.name, self.fuel,
-                                                     self.odometer)
+        return "{}, Fuel = {}, Odometer = {}".format(self.name, self.fuel, self.odometer)
 
     def add_fuel(self, amount):
         """Add amount to the car's fuel."""

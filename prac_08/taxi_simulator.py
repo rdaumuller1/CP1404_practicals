@@ -11,6 +11,7 @@ def main():
     total_bill = 0
     taxis = [Taxi("Prius", 100), SilverTaxi("Limo", 100, 2),
              SilverTaxi("Hummer", 200, 4)]
+    chosen_taxi = None
 
     print("Let's drive!")
     print(MENU)
