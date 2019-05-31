@@ -47,17 +47,19 @@ def run_tests():
     test_car = Car()   # Initial condition
     assert test_car.fuel == 0
 
+
 def convert_phrase_to_sentence(phrase):
     """
     >>> convert_phrase_to_sentence('hello')
     'Hello.'
     >>> convert_phrase_to_sentence('It is an ex parrot')
     'It is an ex parrot.'
-    >>> convert_phrase_to_sentence('my name is Bob')
-    'My name is Bob.'
+    >>> convert_phrase_to_sentence('Come on.')
+    'Come on.'
     """
     sentence = phrase.capitalize()
-    sentence += '.'
+    if not sentence[-1] == '.':
+        sentence += '.'
     return sentence
 
 
